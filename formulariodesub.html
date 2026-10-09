@@ -6,9 +6,54 @@
     <title>Carga de archivos y estado</title>
 </head>
 <body>
+      <fieldset>
+        <legend>
+          <h1>Subida de archivos</h1>
+        </legend>
       
-        Carga de archivos aqui>>>> <input  type="file" id="archivoinput">
+<p>Selecciona el documento o la tarea escolar que deseas entregar.</p>
 
-        <progress 
+        <label for="alumno">Nombre del alumno:</label>
+
+        <input type="text" id="alumno" name="alumno" required>
+
+        <label for="tipo">Tipo de entrega:</label>
+
+        <select id="tipo" name="tipo" required>
+
+            <option value="">Selecciona una opción</option>
+
+            <option value="tarea">Tarea escolar</option>
+
+            <option value="proyecto">Proyecto</option>
+
+            <option value="documento">Documento</option>
+
+        </select>
+
+       Carga de archivos aquí <input  type="file" id="archivoinput" required>
+        <progress></progress>
+        <br>
+        <br>
+        <label for="descripcion">Descripción del archivo:</label>
+
+        <textarea id="descripcion" name="descripcion"
+
+                  rows="2" placeholder="Describe brevemente tu entrega"
+
+                  required></textarea>
+
+                  <br>
+                  <br>
+
+        <div class="botones">
+
+            <button class="enviar" type="submit">Enviar archivo</button>
+
+            <button type="reset" id="cancelar">Cancelar</button>
+
+        </div>
+      </fieldset>
+    </form>
 </body>
 </html>

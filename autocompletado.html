@@ -11,10 +11,65 @@
                 Personalización de perfil 
              </legend>
 
-             
-             
-        </fieldset>
+             </fieldset>
+         <fieldset> 
+        <label for="nombre">Nombre de usuario:</label>
 
+        <input type="text" id="nombre" name="nombre">
+
+         <br>
+         <br>    
+
+        <label for="correo">Correo electrónico:</label>
+
+        <input type="email" id="correo" name="correo">
+        <br>
+        <br>
+
+        <label for="color">Elige tu color favorito:</label>
+
+        <input type="color" id="color" name="color" value="#6a5acd" required>
+        <br>
+        <br>
+
+        <label for="lenguaje">Lenguaje de programación preferido:</label>
+
+        <input type="text" id="lenguaje" name="lenguaje" list="lenguajes" required>
+
+        <datalist id="lenguajes">
+
+            <option value="HTML">
+
+            <option value="CSS">
+
+            <option value="JavaScript">
+
+            <option value="Python">
+
+            <option value="Java">
+
+            <option value="C++">
+
+        </datalist>
+
+        <br>
+
+        <label for="ocupacion">Ocupación:</label>
+
+        <input type="text" id="ocupacion" name="ocupacion" required>
+        <br>
+
+        <div class="botones">
+
+            <button class="enviar" type="submit">Guardar perfil</button>
+
+            <button type="reset">Cancelar</button>
+
+        </div>
+         </fieldset>
+         
+    </form>
+     
     
 </body>
 </html>
