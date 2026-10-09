@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+        <fieldset>
+             <legend>
+
+              <h1> Encuesta de satisfacción </h1>
+
+             </legend>
+
+             <div class="pregunta">
+
+            <strong>
+                1.¿Qué tan satisfecho estás con las conferencias?
+            
+            </strong>
+            <label class="opción">
+            <input type="radio" name="satisfacción" value="muy_satisfecho" required>
+            Muy satisfecho</label>
+
+<label class="opcion">
+
+                <input type="radio" name="satisfaccion"
+
+                       value="satisfecho">
+
+                Satisfecho
+
+            </label>
+
+            <label class="opcion">
+
+                <input type="radio" name="satisfaccion"
+
+                       value="neutral">
+
+                Neutral
+
+            </label>
+
+            <label class="opcion">
+
+                <input type="radio" name="satisfaccion"
+
+                       value="insatisfecho">
+
+                Insatisfecho
+
+            </label>
+
+        </div>
+
+        <div class="pregunta">
+
+            <strong>2. ¿Qué temas te interesaron?</strong>
+
+            <label class="opcion">
+
+                <input type="checkbox" name="temas"
+
+                       value="tecnologia">
+
+                Tecnología
+            </label>
+
+            <label class="opcion">
+
+                <input type="checkbox" name="temas"
+
+                       value="administracion">
+
+                Administración
+                </label>
+
+            <label class="opcion">
+
+                <input type="checkbox" name="temas"
+
+                       value="desarrollo_web">
+
+                Desarrollo web
+                 </label>
+
+            <label class="opcion">
+
+                <input type="checkbox" name="temas"
+
+                       value="innovacion">
+
+                Innovación empresarial </label>
+             </div>
+
+        <div class="pregunta">
+
+            <label for="ubicacion">
+
+                <strong>3. ¿De qué país o ciudad nos visitas?</strong>
+
+            </label>
+
+            <select id="ubicacion" name="ubicacion" required>
+
+                <option value="">Selecciona una opción</option>
+
+                <option value="mexico">México</option>
+
+                <option value="colombia">Colombia</option>
+
+                <option value="argentina">Argentina</option>
+
+                <option value="espana">España</option>
+
+                <option value="otro">Otro</option>
+            </select>
+            </div>
+
+            <div class="pregunta">
+            <label for="comentarios">
+
+                <strong>4. ¿Qué mejorarías para el próximo evento?</strong>
+            </label>
+
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        </div>
+
+        <div class="botones">
+
+            <button class="enviar" type="submit">Enviar encuesta</button>
+
+            <button type="reset">Cancelar</button>
+             </div>
+
+        </fieldset>
+    
+</body>
+</html>
